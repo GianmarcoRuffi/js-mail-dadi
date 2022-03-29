@@ -7,3 +7,7 @@ p {
   font-weight: bold;
   font-size: 20px;
 }
+
+#dice:hover {
+  cursor: pointer;
+}

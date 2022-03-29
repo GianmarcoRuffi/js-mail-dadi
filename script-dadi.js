@@ -13,18 +13,26 @@ console.log(scoreUser);
 let scoreCPU = Math.floor(Math.random() * max) + 1;
 console.log(scoreCPU);
 
-if (scoreUser > scoreCPU) {
-  output.innerHTML =
-    "<p>Hai vinto con: " +
-    scoreUser +
-    " ! Il pc ha totalizzato: " +
-    scoreCPU +
-    "</p>";
-} else {
-  output.innerHTML =
-    "<p>Ha vinto il pc con: " +
-    scoreCPU +
-    " ! Tu hai totalizzato: " +
-    scoreUser +
-    "</p>";
+//
+
+document.getElementById("dice").addEventListener("click", clickDice);
+
+//
+
+function clickDice() {
+  if (scoreUser > scoreCPU) {
+    output.innerHTML =
+      "<p>Hai vinto con: " +
+      scoreUser +
+      " ! Il pc ha totalizzato: " +
+      scoreCPU +
+      "</p>";
+  } else {
+    output.innerHTML =
+      "<p>Ha vinto il pc con: " +
+      scoreCPU +
+      " ! Tu hai totalizzato: " +
+      scoreUser +
+      "</p>";
+  }
 }
