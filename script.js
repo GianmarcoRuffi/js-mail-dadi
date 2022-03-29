@@ -42,10 +42,13 @@ console.log(scoreCPU);
 
 if (scoreUser > scoreCPU) {
   document.writeln(
-    "<br>Hai vinto con " + scoreUser + " ! Il pc ha totalizzato: " + scoreCPU
+    "<br>Hai vinto con: " + scoreUser + " ! Il pc ha totalizzato: " + scoreCPU
   );
 } else {
   document.writeln(
-    "<br>Ha vinto il pc con " + scoreCPU + " ! Tu hai totalizzato: " + scoreUser
+    "<br>Ha vinto il pc con: " +
+      scoreCPU +
+      " ! Tu hai totalizzato: " +
+      scoreUser
   );
 }
