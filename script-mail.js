@@ -3,10 +3,12 @@
 // 3) Genera un messaggio a seconda che sia vero o falso
 
 const user = prompt(
-  "Benvenuto utente, inserisci la lettera corrispondente alla tua Email. Email autorizzate finora: da A a F."
+  "Benvenuto utente, inserisci la lettera corrispondente alla tua Email. Email autorizzate finora: da A a F. (case sensitive)"
 );
 
 const authorizedMails = ["A", "B", "C", "D", "E", "F"];
+
+let output = document.getElementById("output");
 
 let isInvited = false;
 let i = 0;
@@ -22,7 +24,7 @@ while (!isInvited && i != authorizedMails.length) {
 }
 
 if (isInvited) {
-  document.writeln("Benvenuto nel sistema!");
+  output.innerHTML = "<h1>Benvenuto nel sistema!</h1>";
 } else {
-  document.writeln("Accesso negato!");
+  output.innerHTML = "<h1>Accesso negato!</h1>";
 }

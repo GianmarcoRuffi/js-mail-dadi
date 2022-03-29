@@ -5,6 +5,8 @@
 
 const max = 6;
 
+let output = document.getElementById("output");
+
 let scoreUser = Math.floor(Math.random() * max) + 1;
 console.log(scoreUser);
 
@@ -12,14 +14,17 @@ let scoreCPU = Math.floor(Math.random() * max) + 1;
 console.log(scoreCPU);
 
 if (scoreUser > scoreCPU) {
-  document.writeln(
-    "<br>Hai vinto con: " + scoreUser + " ! Il pc ha totalizzato: " + scoreCPU
-  );
+  output.innerHTML =
+    "<p>Hai vinto con: " +
+    scoreUser +
+    " ! Il pc ha totalizzato: " +
+    scoreCPU +
+    "</p>";
 } else {
-  document.writeln(
-    "<br>Ha vinto il pc con: " +
-      scoreCPU +
-      " ! Tu hai totalizzato: " +
-      scoreUser
-  );
+  output.innerHTML =
+    "<p>Ha vinto il pc con: " +
+    scoreCPU +
+    " ! Tu hai totalizzato: " +
+    scoreUser +
+    "</p>";
 }
