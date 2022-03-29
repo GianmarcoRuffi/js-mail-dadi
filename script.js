@@ -32,13 +32,14 @@ if (isInvited) {
 
 const max = 6;
 
-const scoreUser = Math.floor(Math.random() * max) + 1;
+let scoreUser = Math.floor(Math.random() * max) + 1;
 console.log(scoreUser);
 
-const scoreCPU = Math.floor(Math.random() * max) + 1;
+let scoreCPU = Math.floor(Math.random() * max) + 1;
 console.log(scoreCPU);
 
 if (scoreUser > scoreCPU) {
-  console.log("Hai vinto!");
-} else scoreUser <= scoreCPU;
-console.log("Ha vinto il pc!");
+  document.writeln("<br>Hai vinto con " + scoreUser);
+} else {
+  document.writeln("<br>Ha vinto il pc con " + scoreCPU);
+}
