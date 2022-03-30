@@ -7,12 +7,6 @@ const max = 6;
 
 let output = document.getElementById("output");
 
-let scoreUser = Math.floor(Math.random() * max) + 1;
-console.log(scoreUser);
-
-let scoreCPU = Math.floor(Math.random() * max) + 1;
-console.log(scoreCPU);
-
 //
 
 document.getElementById("dice").addEventListener("click", clickDice);
@@ -20,6 +14,12 @@ document.getElementById("dice").addEventListener("click", clickDice);
 //
 
 function clickDice() {
+  let scoreUser = Math.floor(Math.random() * max) + 1;
+  console.log(scoreUser);
+
+  let scoreCPU = Math.floor(Math.random() * max) + 1;
+  console.log(scoreCPU);
+
   if (scoreUser > scoreCPU) {
     output.innerHTML =
       "<p>Hai vinto con: " +
