@@ -1,6 +1,7 @@
 main {
   background-color: rgb(42, 44, 165);
   color: white;
+  min-height: 100vh;
 }
 
 p {
