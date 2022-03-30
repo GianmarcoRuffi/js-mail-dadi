@@ -27,6 +27,9 @@ function clickDice() {
       " ! Il pc ha totalizzato: " +
       scoreCPU +
       "</p>";
+  } else if ((scoreUser = scoreCPU)) {
+    output.innerHTML =
+      "<p>Pareggio! PC: " + scoreCPU + " Tu: " + scoreUser + "</p>";
   } else {
     output.innerHTML =
       "<p>Ha vinto il pc con: " +
